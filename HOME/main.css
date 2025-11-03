@@ -14,12 +14,6 @@
   font-family: Arial, sans-serif;
 }
 
-body {
-  /* background-color: #121214;
-    color: #ffffff;
-    height: 1200px; */
-}
-
 header {
   background-color: var(--escuro);
   /*#24252a; */
@@ -191,6 +185,23 @@ main p {
   color: #333333;
 }
 
+.learn-more-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--magenta);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: var(--vermelho);
+}
+
+/* HOME */
 .home {
   background-color: var(--beje);
   height: 70vh;
@@ -213,12 +224,12 @@ main p {
 }
 
 
+
 /* Seção História */
 .historia {
   background-color: var(--azul);
   height: 110vh;
   padding: 0 6rem;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -230,6 +241,11 @@ main p {
 .historia-content {
   max-width: 50%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 1px solid; */
+  min-height: 90vh;
 }
 
 .historia-content h1 {
@@ -241,29 +257,73 @@ main p {
   color: #e0e0e0;
 }
 
+.historia-title {
+  text-align: center;
+  border-bottom: white solid;
+  padding-bottom: 10px;
+}
+
 .historia .img {
   min-height: 100%;
-  max-width: 300px;
+  max-width: 400px;
+  min-width: 320px;
   background-color: none;
-  padding: 0;
+  padding-inline: 20px;
+  padding-left: 100;
   margin: 0;
 }
 
-.learn-more-btn {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--magenta);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+
+/* Eventos da linha do tempo */
+.summary-container {
+  width: 100%;
+  overflow-y: none;
 }
 
-.learn-more-btn:hover {
-  background-color: var(--vermelho);
+.event-summary {
+  display: none;
+  /* All summaries hidden by default (will be toggled by JS) */
 }
+
+/* Ensure the first event is block-level by default if no JS runs, 
+           but the script will handle the initial state */
+.event-summary.active {
+  display: block;
+}
+
+.event-summary h2 {
+  font-size: 2rem;
+  /* Slightly larger title */
+  margin-bottom: 30px;
+}
+
+.event-summary .pic-placeholder {
+  width: 400px;
+  /* Fixed width for placeholder */
+  height: 300px;
+  /* Fixed height for placeholder */
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.event-summary p {
+  font-size: 1.1rem;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.imgThumb {
+  width: 400px;
+  height: 300px;
+
+}
+
 
 /* Linha do Tempo */
 .timeline {
@@ -306,11 +366,14 @@ main p {
 .timeline h3 {
   margin: 0;
   font-size: 1.2rem;
+  border-bottom: 1px solid var(--vermelho);
+  width: 42px;
 }
 
 .timeline p {
   margin: 5px 0 0 0;
   font-size: .9rem;
+  font-weight: bold;
 }
 
 .timeline .content {
@@ -318,14 +381,18 @@ main p {
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.5s ease-out;
+  transform-origin: left center;
 }
 
 .timeline .content:hover {
   background-color: #e0d7cd;
+  transform: translateX(30px);
 }
 
-/* Serviços */
-.servicos {
+/* desafios */
+.desafios {
   background-color: var(--beje);
   height: 70vh;
   padding: 2rem 6rem;
@@ -336,23 +403,21 @@ main p {
   box-shadow: rgba(225, 227, 230, 0.2) 0px 8px 24px;
 }
 
-.content-srv {
+.content-des {
   max-width: 50%;
 }
 
-.content-srv h1 {
+.content-des h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: var(--escuro);
 }
 
-.content-srv p {
+.content-des p {
   font-size: 1rem;
   line-height: 1.45;
   color: #333333;
 }
-
-
 
 
 /* Solutions */
@@ -383,20 +448,20 @@ main p {
 }
 
 
-/* Reflexão */ 
+/* Reflexão */
 
-.reflexao{
-  background-color: var(--beje)  ;
+.reflexao {
+  background-color: var(--beje);
   height: 70vh;
   padding: 1rem 6rem;
   display: flex;
-  align-items:normal;
+  align-items: normal;
   justify-content: space-around;
   flex-wrap: wrap;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px;
 }
 
-.content-reflexao{
+.content-reflexao {
   max-width: 70%;
   margin-top: 3rem;
   text-align: justify;
@@ -409,7 +474,7 @@ main p {
   margin-bottom: 40px;
 }
 
-.content-reflexao p{
+.content-reflexao p {
   font-size: 1.2rem;
   text-indent: 3em;
 }
@@ -450,93 +515,93 @@ main p {
 
 /* Footer */
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 2rem 6rem;
-    background-color: var(--escuro);
-    color: white;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem 6rem;
+  background-color: var(--escuro);
+  color: white;
+  flex-wrap: wrap;
 }
 
 .footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin: 0 1rem;
+  flex: 1;
+  min-width: 200px;
+  margin: 0 1rem;
 }
 
 .footer-section h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: var(--vermelho);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--vermelho);
 }
 
 .footer-section p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: #e0e0e0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #e0e0e0;
 }
 
 .footer-section ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-section ul li a {
-    text-decoration: none;
-    color: #e0e0e0;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: var(--vermelho);
+  color: var(--vermelho);
 }
 
 .social-links {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .social-links li a {
-    color: var(--laranja);
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+  color: var(--laranja);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
 .social-links li a:hover {
-    color: var(--vermelho);
+  color: var(--vermelho);
 }
 
 .footer-bottom {
-    background-color: var(--escuro);
-    text-align: center;
-    padding: 1rem 0;
-    border-top: 1px solid var(--azul);
+  background-color: var(--escuro);
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid var(--azul);
 }
 
 .footer-bottom p {
-    font-size: 0.8rem;
-    color: #cccccc;
+  font-size: 0.8rem;
+  color: #cccccc;
 }
 
 /* Responsividade para Mobile */
 @media screen and (max-width: 730px) {
-    .footer-container {
-        flex-direction: column;
-        padding: 1rem 2rem;
-        text-align: center;
-    }
+  .footer-container {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
 
-    .footer-section {
-        margin: 1rem 0;
-    }
+  .footer-section {
+    margin: 1rem 0;
+  }
 
-    .social-links {
-        justify-content: center;
-    }
+  .social-links {
+    justify-content: center;
+  }
 }

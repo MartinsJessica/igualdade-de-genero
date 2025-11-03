@@ -65,55 +65,55 @@
             <div class="img">
                 <ul class="timeline">
                     <li>
-                        <div class="content">
-                            <h3>2020</h3>
-                            <p>Evento 1: Descrição breve.</p>
+                        <div class="content spot" data-event="event1">
+                            <h3>1843</h3>
+                            <p>Algoritmo de Ada Lovelace</p>
                         </div>
                     </li>
                     <li>
-                        <div class="content">
-                            <h3>2021</h3>
-                            <p>Evento 2: Descrição breve.</p>
+                        <div class="content spot" data-event="event2">
+                            <h3>1946</h3>
+                            <p>As mulheres do ENIAC</p>
                         </div>
                     </li>
                     <li>
-                        <div class="content">
-                            <h3>2022</h3>
-                            <p>Evento 3: Descrição breve.</p>
+                        <div class="content spot" data-event="event3">
+                            <h3>1969</h3>
+                            <p>Margaret Hamilton e a Apollo 11</p>
                         </div>
                     </li>
                     <li>
-                        <div class="content">
+                        <div class="content spot" data-event="event4">
+                            <h3>2008</h3>
+                            <p>Sheryl Sandberg - Mulher em cargo C-Level</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content spot" data-event="event5">
+                            <h3>2012</h3>
+                            <p>Reshma Saujani funda o Girls Who Code</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content spot" data-event="event6">
+                            <h3>2013</h3>
+                            <p>Fei-Fei Li e a Universidade de Stanford</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content spot" data-event="event7">
+                            <h3>2025</h3>
+                            <p>Ana Helena Ulbrich - Autoridade em IA</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content spot" data-event="event8">
                             <h3>2023</h3>
                             <p>Evento 4: Descrição breve.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="content">
-                            <h3>2023</h3>
-                            <p>Evento 4: Descrição breve.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content">
-                            <h3>2023</h3>
-                            <p>Evento 4: Descrição breve.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content">
-                            <h3>2023</h3>
-                            <p>Evento 4: Descrição breve.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content">
-                            <h3>2023</h3>
-                            <p>Evento 4: Descrição breve.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content">
+                        <div class="content spot" data-event="event9">
                             <h3>2023</h3>
                             <p>Evento 4: Descrição breve.</p>
                         </div>
@@ -121,17 +121,94 @@
                     
                 </ul>
             </div>
-
             <div class="historia-content">
-                <h1>História</h1>
-                <p>This is the about section. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, maiores voluptates? Hic sunt quo itaque qui voluptatibus quis quos atque perferendis porro? Architecto error culpa modi totam, odit nesciunt. Fugiat.</p>
-
-                <button class="learn-more-btn">Learn More</button>
+                <h1 class="historia-title">História</h1>
+                <div class="summary-container">
+                    <div class="event-summary" id="event1-summary">
+                        <h2>Algoritmo de Ada Lovelace</h2>
+                        <div class="pic-placeholder"><img class="imgThumb" src="imgs/Ada Lovelace.jpg" alt="Retrato pintado de Ada Lovelace"></div>
+                        <p>Entre os anos de 1842 e 1843, Augusta Ada Byron King, Condessa de Lovelace, conhecida como Ada Lovelace,
+                        desenvolveu o primeiro algoritmo matemático desenvolvido especificamente para ser implementado em uma máquina,
+                        a Máquina Diferencial (Analytical Engine) criada pelo britânico Charles Babbage.
+                        <br>
+                        <br>
+                        Conhecido como Note G (ou Nota G, em tradução livre), o objetivo do algoritmo era calcular os números de Bernoulli
+                        </p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="event-summary" id="event2-summary">
+                        <h2>As mulheres do ENIAC</h2>
+                        <div class="pic-placeholder"><img class="imgThumb" src="imgs/ENIAC Women.jpg" alt="Duas mulheres operando o ENIAC"></div>
+                        <p>As "Mulheres do ENIAC" são um grupo de 6 mulheres que trabalharam na programação do ENIAC, o computador usado pelo exército dos EUA durante a segunda guerra para cálculos de balística.<br><br>
+                        Na foto, temos duas delsa, Jean Jennings (ou Jean Bartik, à esquerda) e Frances Bilas, on elas estão preparando o computador para o Dia da Demonstração em Fevereiro de 1946.<br><br>
+                        As outras integrantes da equipe foram  Ruth Lichterman, Marlyn Meltzer, Kay Antonelli e Betty Holberton.<br><br>
+                        Os esforços dessas mulheres só receberam reconhecimento décadas após suas contribuições, graças aos esforços da historiadora Kathy Kleiman e, em 1997, foram todas inclusas no Hall da Fama da Tecnologia.
+                        </p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="event-summary" id="event3-summary">
+                        <h2>Margaret Hamilton e a Apollo 11</h2>
+                        <div class="pic-placeholder"><img class="imgThumb" src="imgs/Margaret Hamilton.jpg" alt="Retrato de Margaret Hamilton"></div>
+                        <p>Margaret Hamilton foi diretora da divisão de Software no Laboratório de Instrumentação do MIT, a qual desenvolveu o programa de voo usado no projeto Apolo 11.<br><br>
+                        O programa de Hamilton permitiu que o computador reconhecesse uma falha causada por erro humano na lista de comandos a serem excutados pelos astronautas, levando o próprio a
+                        executar apenas tarefas prioritárias a partir de um programa de recuperação.<br><br>
+                        Margaret é reconhecida pela NASA como uma das responsáveis por popularizar o conceito de Engenharia de Software e pelo ex-presidente dos EUA, Barack Obama, com a Presidential Medal of Freedom, graças
+                        à sua atuação no projeto Apolo 11.
+                        </p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="event-summary" id="event4-summary">
+                        <h2>Sheryl Sandberg - Mulher em cargo C-Level</h2>
+                        <div class="pic-placeholder"><img class="imgThumb" src="imgs/Sheryl Sandberg.jpg" alt="Retrato de Sheryl Sandberg"></div>
+                        <p>Tendo ocupado o cargo de vice-presidente de vendas da Google até 2007, Sheryl se tornou COO (Chief Operational Officer - Diretora Operacional, em tradução livre) da Meta (ex-Facebook) no ano seguinte.<br><br>
+                        Embora não atue diretamente como desenvolvimento de novas tecnologias, Sandberg é uma das vozes mais marcantes na luta contra a desigualdade de gênero no mercado de trabalho tanto por estar no mercado de tecnologia quanto por ocupar um cargo de liderança.<br><br>
+                            
+                        </p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="event-summary" id="event5-summary">
+                        <h2>Reshma Saujani funda o Girls Who Code</h2>
+                        <div class="pic-placeholder"><img class="imgThumb" src="imgs/Reshma Saujani.jpg" alt="Retrato de Reshma Saujani"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="event-summary" id="event6-summary">
+                        <h2>Fei-Fei Li e a Universidade de Stanford</h2>
+                        <div class="pic-placeholder"><img class="imgThumb" src="imgs/Fei-Fei Li.jpg" alt="Retrato de Fei-Fei Li"></div>
+                        <p>A Dra. Fei-Fei Li é a primeira Professora Sequoia (título de honra por mérito acadêmico) do Departamento de Ciência da Computação da Universidade de Stanford
+                        e cofundadora e codiretora do Instituto de IA Centrada no Ser Humano de Stanford.<br><br>
+                        Ela atuou como diretora do Laboratório de IA de Stanford de 2013 a 2018.<br><br>
+                        A Dra. Li foi reconhecida como uma das 100 pessoas mais influentes na área de IA pela revista Time em 2023, como uma das Mulheres na Tecnologia pela revista ELLE (2017),
+                        como uma das Pensadoras Globais de 2015 pela revista Foreign Policy e como uma das "Grandes Imigrantes: O Orgulho da América" ​​em 2016 pela Fundação Carnegie.
+                        </p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="event-summary" id="event7-summary">
+                        <h2>Ana Helena Ulbrich - Autoridade em IA</h2>
+                        <div class="pic-placeholder"><img class="imgThumb" src="imgs/Ana Helena Ulbrich.png" alt="Retrato de Ana Helena Ulbrich"></div>
+                        <p>Ana Helena foi reconhecida pela revista americana Time por ter criado a NoHarm, ferramenta que desenvolveu junto com o irmão para resolver um problema do sistema de saúde brasileiro: reduzir o número de erros em prescrições médicas.<br><br>
+                            A NoHarm é uma plataforma de gerenciamento de receitas e medicamentos de código aberto que usa IA para avaliar e fazer um ranqueamento das prescrições mais críticas a fim de ajudar farmacêuticos a organizar seu trabalho,
+                            reduzindo ineficiências na análise de prescrição de medicamentos em hospitais, clínicas e centros de cuidados. 
+                        </p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="event-summary" id="event8-summary">
+                        <h2>Title #08</h2>
+                        <div class="pic-placeholder">Picture Placeholder (300px x 200px)</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="event-summary" id="event9-summary">
+                        <h2>Title #09</h2>
+                        <div class="pic-placeholder">Picture Placeholder (300px x 200px)</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
             </div>
         </section>
 
-        <section id="" class="servicos">
-            <div class="content-srv">
+        <section id="" class="desafios">
+            <div class="content-des">
                 <h1>Desafios da mulher na área da tecnologia: Luta pela igualdade</h1>
                 <p>This is the services section. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, maiores voluptates? Hic sunt quo itaque qui voluptatibus quis quos atque perferendis porro? Architecto error culpa modi totam, odit nesciunt. Fugiat.</p>
                 <button class="learn-more-btn">Learn More</button>
