@@ -228,7 +228,7 @@ main p {
 /* Seção História */
 .historia {
   background-color: var(--azul);
-  height: 110vh;
+  height: 105vh;
   padding: 0 6rem;
   display: flex;
   align-items: center;
@@ -331,7 +331,7 @@ main p {
   padding: 0;
   /* margin: 20px; */
   position: relative;
-  height: 110vh;
+  height: 105vh;
 }
 
 .timeline::before {
@@ -346,7 +346,7 @@ main p {
 }
 
 .timeline li {
-  top: 30px;
+  top: 90px;
   margin-bottom: 30px;
   padding-left: 30px;
   position: relative;
