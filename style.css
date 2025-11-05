@@ -1,0 +1,103 @@
+/* === Estilo global === */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f2ebe5;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Cabeçalho === */
+header {
+    background-color: #2b262d;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header .subtitulo {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* === Conteúdo principal === */
+main {
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+
+/* === Títulos === */
+h2 {
+    color: black;
+    border-left: 6px solid #9f496e;
+    padding-left: 12px;
+    margin-top: 2.5rem;
+}
+
+h3 {
+    color: black;
+    margin-top: 1.8rem;
+}
+
+/* === Parágrafos e listas === */
+p {
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+ul li {
+    background: #f9f2ff;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1rem;
+    border-left: 4px solid #9f496e;
+    border-radius: 8px;
+}
+
+/* === Links === */
+a {
+    color: #9f496e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* === Rodapé === */
+footer {
+    text-align: center;
+    background-color: #2b262d;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
