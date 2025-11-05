@@ -1,51 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mulheres na Tecnologia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>👩‍💻 Mulheres na Tecnologia - Desafios e Conquistas</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <!-- ====== HEADER ====== -->
+  <header>
+    <h1>👩‍💻 Mulheres na Tecnologia: Desafios, Conquistas e Legado</h1>
+    <p>“Elas desafiam estereótipos, impulsionam a inovação e enfrentam barreiras para construir um futuro mais igualitário.”🚀</p>
+  </header>
 
-    <header>
-        <h1>Mulheres na Tecnologia</h1>
-        <p class="subtitulo">Desafios, conquistas e caminhos para um futuro mais inclusivo</p>
-    </header>
+  <!-- ====== CENÁRIO ====== -->
+  <section class="section">
+    <h2>📊 Cenário Atual no Brasil</h2>
+    <p>
+        De acordo com dados do <strong>Cadastro Geral de Empregados e Desempregados (CAGED)</strong> <a href="https://www.cnnbrasil.com.br/tecnologia/mulheres-na-tecnologia/" target="_blank">
+    </p>
+    <ul>
+      <li>👩‍💻 <strong>12,3%</strong> dos cargos de tecnologia são ocupados por mulheres.</li>
+      <li>👨‍💻 <strong>83,3%</strong> por homens.</li>
+    </ul>
+    <p>🔎 Essa disparidade mostra o quanto ainda há a avançar na representatividade feminina dentro do setor tech.</p>
 
-    <main>
-        <section id="tecnologia">
-            <h2>Desigualdade de gênero: desafios enfrentados pela mulher na área da tecnologia.</h2>
-            <p>No setor de tecnologia, a <strong>igualdade de gênero ainda é um grande desafio</strong>. Apesar de avanços, o mercado continua dominado por homens, o que torna mais difícil a inserção e o reconhecimento das mulheres nesse campo.</p>
-            <p>Historicamente, muitas mulheres que contribuíram com descobertas e inovações tiveram seus nomes <strong>apagados</strong>, e ainda há <strong>falta de incentivo, diferenças salariais</strong> e <strong>baixa representatividade</strong> em cargos técnicos e de liderança.</p>
+    <div class="chart-box">
+      <canvas id="chartGenero"></canvas>
+    </div>
+  </section>
 
-            <h3>A importância da presença feminina na tecnologia</h3>
-            <p>A inclusão de mulheres é fundamental para garantir <strong>diversidade e representatividade</strong>, ampliando a <strong>inovação e a qualidade</strong> das soluções tecnológicas. A presença feminina contribui para <strong>combater a discriminação</strong> e promover a <strong>igualdade de gênero</strong>.</p>
+  <!-- ====== DESIGUALDADE ====== -->
+  <section class="section">
+    <h2>💰 Desigualdade Salarial</h2>
+    <p>
+      O <strong>Fórum Econômico Mundial</strong> estima que a igualdade de gênero no mercado de trabalho deve levar cerca de 
+      <strong>257 anos</strong> para se concretizar 😳.
+    </p>
+    <p>
+      Segundo a <strong>Revelo</strong>, a pretensão salarial das mulheres ainda é, em média, 
+      <strong>22% menor</strong> que a dos homens — reflexo de uma cultura que precisa ser revista.
+    </p>
 
-            <h3>🇧🇷 O cenário das mulheres na tecnologia no Brasil</h3>
-            <p>Segundo o <a href="https://agenciabrasil.ebc.com.br/radioagencia-nacional/direitos-humanos/audio/2022-04/participacao-de-mulheres-na-tecnologia-aumenta-60-aponta-caged" target="_blank">CAGED</a>, a participação feminina cresceu <strong>60% entre 2015 e 2022</strong>, mas apenas <strong>12,3% dos cargos</strong> de tecnologia são ocupados por mulheres. Em áreas técnicas, há <strong>10 homens para cada mulher</strong>.</p>
-            <p>O <a href="https://www.cnnbrasil.com.br/economia/diferenca-salarial-entre-homens-e-mulheres-vai-a-22-diz-ibge/" target="_blank">IBGE</a> mostra que as mulheres ganham em média <strong>78% do que os homens recebem</strong>, mesmo quando têm maior escolaridade. Mulheres negras recebem cerca de <strong>metade do salário</strong> de homens não negros.</p>
+    <div class="chart-box">
+      <canvas id="chartSalario"></canvas>
+    </div>
+  </section>
 
-            <h3>Principais desafios enfrentados</h3>
-            <ul>
-                <li> <strong>Diferenças salariais:</strong> a desigualdade de remuneração reforça a exclusão e desestimula a permanência feminina no setor;</li>
-                <li> <strong>Falta de representatividade:</strong> poucas referências femininas desmotivam novas gerações;</li>
-                <li> <strong>Discriminação e preconceito:</strong> ambientes masculinos ainda reproduzem estereótipos e comportamentos inadequados;</li>
-                <li> <strong>Síndrome da impostora:</strong> a insegurança leva à autocobrança e afeta o crescimento profissional.</li>
-            </ul>
+  <!-- ====== REPRESENTATIVIDADE ====== -->
+  <section class="section">
+    <h2>⚖️ Falta de Representatividade e Incentivo</h2>
+    <p>
+      Muitas mulheres não se veem em cargos técnicos ou de liderança — e isso 
+      afeta diretamente o interesse e a permanência delas na área.
+    </p>
+    <p>
+      👀 A ausência de modelos femininos contribui para a manutenção de estereótipos, como a ideia ultrapassada de que “tecnologia é coisa de homem”.
+    </p>
+  </section>
 
-            <h3>🎓 Desafios na formação e educação tecnológica</h3>
-            <p>De acordo com a <a href="https://arxiv.org/abs/2505.02857" target="_blank">UFS</a>, apenas <strong>17,8% dos matriculados</strong> em cursos de TI são mulheres. O ambiente acadêmico ainda é <strong>hostil e competitivo</strong>, levando à evasão e menor participação em projetos de pesquisa.</p>
+  <!-- ====== DISCRIMINAÇÃO ====== -->
+  <section class="section">
+    <h2>⚖️ Discriminação e Preconceito</h2>
+    <p>
+      Ambientes dominados por homens podem gerar <strong>subestimação, desvalorização</strong> e <strong>falta de reconhecimento</strong>.
+    </p>
+    <p>
+      Essas situações comprometem a <strong>autoestima</strong> e o <strong>crescimento profissional</strong> das mulheres que desejam progredir na carreira tech.
+    </p>
+    <p>
+      🔗 <a href="https://www.cnnbrasil.com.br/saude/autoestima-alta/" target="_blank">Leia mais sobre autoestima</a>
+    </p>
+  </section>
 
-            <h3>🌐 Cenário global</h3>
-            <p>As mulheres ocupam apenas <strong>26,7% dos cargos em tecnologia</strong> e menos de <strong>11% em liderança</strong> (<a href="https://www.globalsign.com/pt-br/blog/A-desigualdade-genero-Como-mercado-tecnologia-pode-se-beneficiar-de-uma-melhor-representacao-mulheres" target="_blank">GlobalSign</a>), reduzindo a diversidade de pensamento e a inovação nas empresas.</p>
-        </section>
+  <!-- ====== DEPOIMENTOS ====== -->
+  <section class="section">
+    <h2>💬 Depoimentos</h2>
+    <blockquote>
+      “Na primeira oportunidade como analista de TI, tive promessas de crescimento, mas os líderes contratados eram exclusivamente masculinos. Ali descobri minha paixão pela tecnologia, mas estava no lugar errado.”  
+      — <strong>Lidiane Jannke, especialista em SEO técnico.</strong>
+    </blockquote>
+    <blockquote>
+      “Estar em uma empresa que apoia a presença de mulheres na liderança e na TI foi fundamental para meu crescimento.”  
+      — <strong>Lidiane Jannke</strong>
+    </blockquote>
+    <p>✨ Ambientes com diversidade real inspiram e transformam trajetórias.</p>
+  </section>
 
-    </main>
+    <!-- ====== SÍNDROME DA IMPOSTORA ====== -->
+  <section class="section">
+    <h2>🧠 Autocobrança e Síndrome da Impostora</h2>
+    <p>
+      A <strong>síndrome da impostora</strong> faz com que muitas mulheres duvidem de suas próprias conquistas — acreditando que seus resultados são “sorte” e não mérito.
+    </p>
+    <p>
+      Essa autocrítica constante gera <strong>sobrecarga</strong>, <strong>ansiedade</strong> e <strong>autoexigência extrema</strong>, dificultando o avanço profissional.
+    </p>
+    <p>
+      🔗 <a href="https://www.cnnbrasil.com.br/saude/correspondente-medico-oque-e-a-sindrome-do-impostor/" target="_blank">Saiba mais sobre o tema</a>
+    </p>
+  </section>
 
-    <footer>
-        <p>Desenvolvido por </p>
-    </footer>
+  
 
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    📚 <strong>Fontes:</strong> CNN Brasil, CAGED, Fórum Econômico Mundial, Revelo, USP, SBC e Mais Diversidade.<br>
+    💻 Desenvolvido com <strong>HTML + CSS + JS</strong> | Gráficos: <strong>Chart.js</strong>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
