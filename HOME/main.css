@@ -608,6 +608,29 @@ main p {
   line-height: 1.4;
 }
 
+/* PAGE PARTICIPANTES */
+.inside-partners{
+  justify-self: center;
+}
+.inside-partners img{
+  width: 90px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.inside-card{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.inside-card a{
+  text-decoration: none;
+  color: #000;
+}
+
 /* Footer */
 .footer-container {
   display: flex;
