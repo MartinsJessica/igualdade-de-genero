@@ -1,122 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>👩‍💻 Mulheres na Tecnologia - Desafios e Conquistas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mulheres na Tecnologia - Desafios e Conquistas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <!-- CSS (ajuste caminho se necessário) -->
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <script defer src='js/main.js'></script>
 </head>
 
 <body>
-  <!-- ====== HEADER ====== -->
-  <header>
-    <h1>👩‍💻 Mulheres na Tecnologia: Desafios, Conquistas e Legado</h1>
-    <p>“Elas desafiam estereótipos, impulsionam a inovação e enfrentam barreiras para construir um futuro mais igualitário.”🚀</p>
-  </header>
+   
+    <header class="site-header">
+        <nav class="nav-bar">
+            <div class="logo">Projeto HBR</div>
 
-  <!-- ====== CENÁRIO ====== -->
-  <section class="section">
-    <h2>📊 Cenário Atual no Brasil</h2>
-    <p>
-        De acordo com dados do <strong>Cadastro Geral de Empregados e Desempregados (CAGED)</strong> <a href="https://www.cnnbrasil.com.br/tecnologia/mulheres-na-tecnologia/" target="_blank">
-    </p>
-    <ul>
-      <li>👩‍💻 <strong>12,3%</strong> dos cargos de tecnologia são ocupados por mulheres.</li>
-      <li>👨‍💻 <strong>83,3%</strong> por homens.</li>
-    </ul>
-    <p>🔎 Essa disparidade mostra o quanto ainda há a avançar na representatividade feminina dentro do setor tech.</p>
+            <div class="nav-lists">
+                <ul>
+                    <li><a class="nav-link" href="/index.html">Home</a></li>
+                    <li><a class="nav-link" href="/index.html#historia">História</a></li>
+                    <li><a class="nav-link" href="/desafios.html">Desafios</a></li>
+                    <li><a class="nav-link" href="/solucoes.html">Soluções</a></li>
+                    <li><a class="nav-link" href="/index.html#reflexao">Reflexão</a></li>
+                    <li><a class="nav-link" href="/index.html#Partners">Participantes</a></li>
+                </ul>
+            </div>
 
-    <div class="chart-box">
-      <canvas id="chartGenero"></canvas>
-    </div>
-  </section>
+            <div class="mobile-icon" onclick="menuShow()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
 
-  <!-- ====== DESIGUALDADE ====== -->
-  <section class="section">
-    <h2>💰 Desigualdade Salarial</h2>
-    <p>
-      O <strong>Fórum Econômico Mundial</strong> estima que a igualdade de gênero no mercado de trabalho deve levar cerca de 
-      <strong>257 anos</strong> para se concretizar 😳.
-    </p>
-    <p>
-      Segundo a <strong>Revelo</strong>, a pretensão salarial das mulheres ainda é, em média, 
-      <strong>22% menor</strong> que a dos homens — reflexo de uma cultura que precisa ser revista.
-    </p>
-
-    <div class="chart-box">
-      <canvas id="chartSalario"></canvas>
-    </div>
-  </section>
-
-  <!-- ====== REPRESENTATIVIDADE ====== -->
-  <section class="section">
-    <h2>⚖️ Falta de Representatividade e Incentivo</h2>
-    <p>
-      Muitas mulheres não se veem em cargos técnicos ou de liderança — e isso 
-      afeta diretamente o interesse e a permanência delas na área.
-    </p>
-    <p>
-      👀 A ausência de modelos femininos contribui para a manutenção de estereótipos, como a ideia ultrapassada de que “tecnologia é coisa de homem”.
-    </p>
-  </section>
-
-  <!-- ====== DISCRIMINAÇÃO ====== -->
-  <section class="section">
-    <h2>⚖️ Discriminação e Preconceito</h2>
-    <p>
-      Ambientes dominados por homens podem gerar <strong>subestimação, desvalorização</strong> e <strong>falta de reconhecimento</strong>.
-    </p>
-    <p>
-      Essas situações comprometem a <strong>autoestima</strong> e o <strong>crescimento profissional</strong> das mulheres que desejam progredir na carreira tech.
-    </p>
-    <p>
-      🔗 <a href="https://www.cnnbrasil.com.br/saude/autoestima-alta/" target="_blank">Leia mais sobre autoestima</a>
-    </p>
-  </section>
-
-  <!-- ====== DEPOIMENTOS ====== -->
-  <section class="section">
-    <h2>💬 Depoimentos</h2>
-    <blockquote>
-      “Na primeira oportunidade como analista de TI, tive promessas de crescimento, mas os líderes contratados eram exclusivamente masculinos. Ali descobri minha paixão pela tecnologia, mas estava no lugar errado.”  
-      — <strong>Lidiane Jannke, especialista em SEO técnico.</strong>
-    </blockquote>
-    <blockquote>
-      “Estar em uma empresa que apoia a presença de mulheres na liderança e na TI foi fundamental para meu crescimento.”  
-      — <strong>Lidiane Jannke</strong>
-    </blockquote>
-    <p>✨ Ambientes com diversidade real inspiram e transformam trajetórias.</p>
-  </section>
-
-    <!-- ====== SÍNDROME DA IMPOSTORA ====== -->
-  <section class="section">
-    <h2>🧠 Autocobrança e Síndrome da Impostora</h2>
-    <p>
-      A <strong>síndrome da impostora</strong> faz com que muitas mulheres duvidem de suas próprias conquistas — acreditando que seus resultados são “sorte” e não mérito.
-    </p>
-    <p>
-      Essa autocrítica constante gera <strong>sobrecarga</strong>, <strong>ansiedade</strong> e <strong>autoexigência extrema</strong>, dificultando o avanço profissional.
-    </p>
-    <p>
-      🔗 <a href="https://www.cnnbrasil.com.br/saude/correspondente-medico-oque-e-a-sindrome-do-impostor/" target="_blank">Saiba mais sobre o tema</a>
-    </p>
-  </section>
-
-  
+        <div class="mobile-menu">
+            <ul>
+                <li><a class="nav-link" href="/index.html">Home</a></li>
+                <li><a class="nav-link" href="/index.html#historia">História</a></li>
+                <li><a class="nav-link" href="/desafios.html">Desafios</a></li>
+                <li><a class="nav-link" href="/solucoes.html">Soluções</a></li>
+                <li><a class="nav-link" href="/index.html#reflexao">Reflexão</a></li>
+                <li><a class="nav-link" href="/index.html#Partners">Participantes</a></li>
+            </ul>
+        </div>
+    </header>
 
 
-  <!-- ====== FOOTER ====== -->
-  <footer>
-    📚 <strong>Fontes:</strong> CNN Brasil, CAGED, Fórum Econômico Mundial, Revelo, USP, SBC e Mais Diversidade.<br>
-    💻 Desenvolvido com <strong>HTML + CSS + JS</strong> | Gráficos: <strong>Chart.js</strong>
-  </footer>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+    <!-- ====== CONTEÚDO ORIGINAL DA PÁGINA ====== -->
+    <main class="section">
+
+        <header class="page-header">
+            <h1>👩‍💻 Mulheres na Tecnologia: Desafios, Conquistas e Legado</h1>
+            <p>“Elas desafiam estereótipos, impulsionam a inovação e enfrentam barreiras para construir um futuro mais igualitário.”🚀</p>
+        </header>
+
+        <!-- ====== CENÁRIO ====== -->
+        <section class="section">
+            <h2>📊 Cenário Atual no Brasil</h2>
+            <p>
+                De acordo com dados do <strong>Cadastro Geral de Empregados e Desempregados (CAGED)</strong> <a
+                    href="https://www.cnnbrasil.com.br/tecnologia/mulheres-na-tecnologia/" target="_blank">
+            </p>
+            <ul>
+                <li>👩‍💻 <strong>12,3%</strong> dos cargos de tecnologia são ocupados por mulheres.</li>
+                <li>👨‍💻 <strong>83,3%</strong> por homens.</li>
+            </ul>
+            <p>🔎 Essa disparidade mostra o quanto ainda há a avançar na representatividade feminina dentro do setor
+                tech.</p>
+
+            <div class="chart-box">
+                <canvas id="chartGenero"></canvas>
+            </div>
+        </section>
+
+        <!-- ====== DESIGUALDADE ====== -->
+        <section class="section">
+            <h2>💰 Desigualdade Salarial</h2>
+            <p>
+                O <strong>Fórum Econômico Mundial</strong> estima que a igualdade de gênero no mercado de trabalho deve
+                levar cerca de
+                <strong>257 anos</strong> para se concretizar 😳.
+            </p>
+            <p>
+                Segundo a <strong>Revelo</strong>, a pretensão salarial das mulheres ainda é, em média,
+                <strong>22% menor</strong> que a dos homens — reflexo de uma cultura que precisa ser revista.
+            </p>
+
+            <div class="chart-box">
+                <canvas id="chartSalario"></canvas>
+            </div>
+        </section>
+
+        <!-- ====== REPRESENTATIVIDADE ====== -->
+        <section class="section">
+            <h2>⚖️ Falta de Representatividade e Incentivo</h2>
+            <p>
+                Muitas mulheres não se veem em cargos técnicos ou de liderança — e isso
+                afeta diretamente o interesse e a permanência delas na área.
+            </p>
+            <p>
+                👀 A ausência de modelos femininos contribui para a manutenção de estereótipos, como a ideia
+                ultrapassada de que “tecnologia é coisa de homem”.
+            </p>
+        </section>
+
+        <!-- ====== DISCRIMINAÇÃO ====== -->
+        <section class="section">
+            <h2>⚖️ Discriminação e Preconceito</h2>
+            <p>
+                Ambientes dominados por homens podem gerar <strong>subestimação, desvalorização</strong> e <strong>falta
+                    de reconhecimento</strong>.
+            </p>
+            <p>
+                Essas situações comprometem a <strong>autoestima</strong> e o <strong>crescimento profissional</strong>
+                das mulheres que desejam progredir na carreira tech.
+            </p>
+            <p>
+                🔗 <a href="https://www.cnnbrasil.com.br/saude/autoestima-alta/" target="_blank">Leia mais sobre
+                    autoestima</a>
+            </p>
+        </section>
+
+        <!-- ====== DEPOIMENTOS ====== -->
+        <section class="section">
+            <h2>💬 Depoimentos</h2>
+            <blockquote>
+                “Na primeira oportunidade como analista de TI, tive promessas de crescimento, mas os líderes contratados
+                eram exclusivamente masculinos. Ali descobri minha paixão pela tecnologia, mas estava no lugar errado.”
+                — <strong>Lidiane Jannke, especialista em SEO técnico.</strong>
+            </blockquote>
+            <blockquote>
+                “Estar em uma empresa que apoia a presença de mulheres na liderança e na TI foi fundamental para meu
+                crescimento.”
+                — <strong>Lidiane Jannke</strong>
+            </blockquote>
+            <p>✨ Ambientes com diversidade real inspiram e transformam trajetórias.</p>
+        </section>
+
+        <!-- ====== SÍNDROME DA IMPOSTORA ====== -->
+        <section class="section">
+            <h2>🧠 Autocobrança e Síndrome da Impostora</h2>
+            <p>
+                A <strong>síndrome da impostora</strong> faz com que muitas mulheres duvidem de suas próprias conquistas
+                — acreditando que seus resultados são “sorte” e não mérito.
+            </p>
+            <p>
+                Essa autocrítica constante gera <strong>sobrecarga</strong>, <strong>ansiedade</strong> e
+                <strong>autoexigência extrema</strong>, dificultando o avanço profissional.
+            </p>
+            <p>
+                🔗 <a href="https://www.cnnbrasil.com.br/saude/correspondente-medico-oque-e-a-sindrome-do-impostor/"
+                    target="_blank">Saiba mais sobre o tema</a>
+            </p>
+        </section>
+
+        <!-- ====== SOLUÇÕES ====== -->
+        <!-- ====== SOLUÇÕES ====== -->
+        <section class="section">
+            <h2>💡 Caminhos para Mais Mulheres na Tecnologia</h2>
+            <p>O futuro da tecnologia precisa ser plural e inclusivo. Aqui estão estratégias práticas 👇</p>
+
+            <h3>🎓 Educação & Capacitação</h3>
+            <ul>
+                <li>👧 Incentivar meninas a participarem de clubes de robótica e programação desde cedo.</li>
+                <li>🧩 Oferecer treinamentos técnicos voltados a mulheres (dados, IA, cibersegurança, etc).</li>
+                <li>💻 Exemplos de iniciativas: “Meninas na Ciência” (USP), “Meninas Digitais” (SBC).</li>
+            </ul>
+
+            <h3>💼 Ambiente de Trabalho & Carreira</h3>
+            <ul>
+                <li>🌱 Mentorias: conectar profissionais experientes e iniciantes.</li>
+                <li>👩‍💼 Recrutamento inclusivo e presença feminina em cargos estratégicos.</li>
+                <li>🕒 Flexibilidade e apoio à maternidade.</li>
+                <li>🛡️ Políticas firmes contra assédio e discriminação.</li>
+            </ul>
+
+            <h3>🌐 Rede de Apoio & Visibilidade</h3>
+            <ul>
+                <li>🤝 Sororidade: fortalecer redes de mulheres em tech.</li>
+                <li>🌟 Dar visibilidade a lideranças femininas.</li>
+                <li>🤖 Parcerias com empresas e ONGs inclusivas.</li>
+            </ul>
+        </section>
+
+
+        <!-- ====== FOOTER ====== -->
+        <footer>
+            📚 <strong>Fontes:</strong> CNN Brasil, CAGED, Fórum Econômico Mundial, Revelo, USP, SBC e Mais
+            Diversidade.<br>
+            💻 Desenvolvido com <strong>HTML + CSS + JS</strong> | Gráficos: <strong>Chart.js</strong>
+        </footer>
+
+        <!-- JS -->
+        <script src="script.js"></script>
 </body>
+
 </html>

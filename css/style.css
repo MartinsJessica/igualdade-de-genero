@@ -1,0 +1,250 @@
+/* =========================================================
+   🌈 VARIÁVEIS DO TEMA
+========================================================= */
+:root {
+  --bg-light: #f9fafc;
+  --text-light: #1a1a1a;
+  --bg-dark: #0e1117;
+  --text-dark: #f3f4f6;
+
+  --accent1: #c77cff;
+  --accent2: #00b4d8;
+  --accent3: #f72585;
+  --accent4: #4895ef;
+
+  --magenta: #9f496e;
+  --escuro: #24252a;
+  --vermelho: #ff4b4b;
+}
+
+/* =========================================================
+   🧠 BASE
+========================================================= */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #f2ebe5;
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  transition: all 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  .section,
+  .chart-box {
+    background-color: #111827;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* =========================================================
+   🌐 NAVBAR / HEADER PRINCIPAL
+========================================================= */
+.site-header {
+  background-color: var(--escuro);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  padding: 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.nav-lists ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--vermelho);
+}
+
+.mobile-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: var(--escuro);
+}
+
+/* ——— MOBILE ——— */
+@media screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 1rem 2rem;
+  }
+
+  .nav-lists {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: block;
+  }
+
+  .mobile-menu {
+    width: 100%;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .mobile-menu ul li {
+    border-bottom: 1px solid #cccccc71;
+    padding: 15px 0;
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+/* =========================================================
+   🟣 HEADER INTERNO (Título da Página)
+========================================================= */
+.page-header {
+  text-align: center;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: var(--magenta);
+  color: white;
+  border-radius: 16px;
+  max-width: 900px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.page-header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.85;
+}
+
+/* =========================================================
+   📦 SEÇÕES
+========================================================= */
+.section {
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 14px;
+  max-width: 900px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  color: var(--accent4);
+  margin-top: 0;
+}
+
+p,
+li {
+  color: #000000;
+}
+
+ul {
+  list-style: "💡 ";
+  padding-left: 20px;
+}
+
+blockquote {
+  background: rgba(72, 149, 239, 0.1);
+  padding: 15px 20px;
+  border-left: 4px solid var(--accent4);
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+/* =========================================================
+   📊 GRÁFICOS
+========================================================= */
+.chart-box {
+  text-align: center;
+  background: white;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 750px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+canvas {
+  max-width: 100%;
+}
+
+#chartGenero {
+  max-width: 350px;
+  max-height: 350px;
+  margin: 0 auto;
+}
+
+#chartSalario {
+  max-width: 500px;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   ⚙️ FOOTER
+========================================================= */
+footer {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+a {
+  color: var(--accent4);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
