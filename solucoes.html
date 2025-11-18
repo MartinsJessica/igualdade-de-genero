@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>👩‍💻 Mulheres na Tecnologia - Desafios e Conquistas</title>
-
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções — Mulheres na Tecnologia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src='js/main.js'></script>
 </head>
 
 <body>
-  <!-- ====== HEADER ====== -->
-  <header>
-    <h1>👩‍💻 Mulheres na Tecnologia: Desafios, Conquistas e Legado</h1>
-    <p>“Elas desafiam estereótipos, impulsionam a inovação e enfrentam barreiras para construir um futuro mais igualitário.”🚀</p>
-  </header>
+    <header class="site-header">
+        <nav class="nav-bar">
+            <div class="logo">Projeto HBR</div>
 
-  <!-- ====== SOLUÇÕES ====== -->
-  <!-- ====== SOLUÇÕES ====== -->
-  <section class="section">
-    <h2>💡 Caminhos para Mais Mulheres na Tecnologia</h2>
-    <p>O futuro da tecnologia precisa ser plural e inclusivo. Aqui estão estratégias práticas 👇</p>
+            <div class="nav-lists">
+                <ul>
+                    <li><a class="nav-link" href="/index.html">Home</a></li>
+                    <li><a class="nav-link" href="/index.html#historia">História</a></li>
+                    <li><a class="nav-link" href="/desafios.html">Desafios</a></li>
+                    <li><a class="nav-link" href="/solucoes.html">Soluções</a></li>
+                    <li><a class="nav-link" href="/index.html#reflexao">Reflexão</a></li>
+                    <li><a class="nav-link" href="/index.html#Partners">Participantes</a></li>
+                </ul>
+            </div>
 
-    <h3>🎓 Educação & Capacitação</h3>
-    <ul>
-      <li>👧 Incentivar meninas a participarem de clubes de robótica e programação desde cedo.</li>
-      <li>🧩 Oferecer treinamentos técnicos voltados a mulheres (dados, IA, cibersegurança, etc).</li>
-      <li>💻 Exemplos de iniciativas: “Meninas na Ciência” (USP), “Meninas Digitais” (SBC).</li>
-    </ul>
+            <!-- Mobile -->
+            <div class="mobile-icon" onclick="menuShow()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
 
-    <h3>💼 Ambiente de Trabalho & Carreira</h3>
-    <ul>
-      <li>🌱 Mentorias: conectar profissionais experientes e iniciantes.</li>
-      <li>👩‍💼 Recrutamento inclusivo e presença feminina em cargos estratégicos.</li>
-      <li>🕒 Flexibilidade e apoio à maternidade.</li>
-      <li>🛡️ Políticas firmes contra assédio e discriminação.</li>
-    </ul>
-
-    <h3>🌐 Rede de Apoio & Visibilidade</h3>
-    <ul>
-      <li>🤝 Sororidade: fortalecer redes de mulheres em tech.</li>
-      <li>🌟 Dar visibilidade a lideranças femininas.</li>
-      <li>🤖 Parcerias com empresas e ONGs inclusivas.</li>
-    </ul>
-  </section>
+        <div class="mobile-menu">
+            <ul>
+                <li><a class="nav-link" href="/index.html">Home</a></li>
+                <li><a class="nav-link" href="/index.html#historia">História</a></li>
+                <li><a class="nav-link" href="/desafios.html">Desafios</a></li>
+                <li><a class="nav-link" href="/solucoes.html">Soluções</a></li>
+                <li><a class="nav-link" href="/index.html#reflexao">Reflexão</a></li>
+                <li><a class="nav-link" href="/index.html#Partners">Participantes</a></li>
+            </ul>
+        </div>
+    </header>
 
 
-  <!-- ====== FOOTER ====== -->
-  <footer>
-    📚 <strong>Fontes:</strong> CNN Brasil, CAGED, Fórum Econômico Mundial, Revelo, USP, SBC e Mais Diversidade.<br>
-    💻 Desenvolvido com <strong>HTML + CSS + JS</strong> | Gráficos: <strong>Chart.js</strong>
-  </footer>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+    <!-- ==========================
+         TÍTULO DA PÁGINA
+    =========================== -->
+    <header class="page-header">
+        <h1>Mulheres na Tecnologia — Soluções</h1>
+        <p>Estratégias reais para transformar o ecossistema tecnológico.</p>
+    </header>
+
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <main>
+        <section class="section">
+            <h2>💡 Caminhos para Mais Mulheres na Tecnologia</h2>
+            <p>O futuro da tecnologia precisa ser plural e inclusivo. Aqui estão estratégias práticas 👇</p>
+
+            <h3>🎓 Educação & Capacitação</h3>
+            <ul>
+                <li>👧 Incentivar meninas a participarem de clubes de robótica e programação desde cedo.</li>
+                <li>🧩 Oferecer treinamentos técnicos voltados a mulheres (dados, IA, cibersegurança, etc).</li>
+                <li>💻 Exemplos de iniciativas: “Meninas na Ciência” (USP), “Meninas Digitais” (SBC).</li>
+            </ul>
+
+            <h3>💼 Ambiente de Trabalho & Carreira</h3>
+            <ul>
+                <li>🌱 Mentorias: conectar profissionais experientes e iniciantes.</li>
+                <li>👩‍💼 Recrutamento inclusivo e presença feminina em cargos estratégicos.</li>
+                <li>🕒 Flexibilidade e apoio à maternidade.</li>
+                <li>🛡️ Políticas firmes contra assédio e discriminação.</li>
+            </ul>
+
+            <h3>🌐 Rede de Apoio & Visibilidade</h3>
+            <ul>
+                <li>🤝 Sororidade: fortalecer redes de mulheres em tech.</li>
+                <li>🌟 Dar visibilidade a lideranças femininas.</li>
+                <li>🤖 Parcerias com empresas e ONGs inclusivas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        📚 <strong>Fontes:</strong> CNN Brasil, CAGED, Fórum Econômico Mundial, Revelo, USP, SBC e Mais
+        Diversidade.<br>
+        💻 Desenvolvido com <strong>HTML + CSS + JS</strong> | Gráficos: <strong>Chart.js</strong>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
+
 </html>
